@@ -92,11 +92,11 @@ try {
         });
     });
 
-    app.listen(PORT, () => {
+    app.listen(3000, () => {
         console.log(`Listening to port ${PORT}`);
     });
 
-    connect(process.env.MONGO_URI, {
+    connect("mongodb+srv://a:a@cluster0.gpyv5.mongodb.net/?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useFindAndModify: false,
